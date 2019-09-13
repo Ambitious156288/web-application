@@ -18,7 +18,7 @@ form.addEventListener("submit", function (event) {
         .then(function (json) {
             console.log(json)
 
-            for (var i = 0; i < 9; i++) {
+            for (let i = 0; i < 9; i++) {
                 let name = json.results[i].artistName
                 let img = json.results[i].artworkUrl100
                 let songName = json.results[i].collectionName
